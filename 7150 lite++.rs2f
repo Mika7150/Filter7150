@@ -5,7 +5,7 @@ name: header
 
 /* Built on: Thu Jun 12 21:06:09 UTC 2025 */
 /* Commit: dc74555 */
-meta { name = "7150 lite++"; description = "Offers an original color scheme with extensive support for category-based styling/filtering."; }
+meta { name = "Filter7150"; description = "Mika7150's edited joe filter, mainly intended for irons"; }
 
 
 /*@ define:module:default_styling
