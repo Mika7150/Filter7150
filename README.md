@@ -5,13 +5,13 @@ mostly intended for ironmen
 
 # Installation
 
-## Github Method -
+## Github Method 
   1. Install the 'loot filters' plugin on Runelite
   2. Download the .rs2f file
   3. Add it to C:\Users\[USER]\.runelite\loot-filters
   4. Click the refresh button in the side panel for the plugin in Runelite
 
-## Filterscape.xyz method (Easy editing) -
+## Filterscape.xyz method (Easy editing) 
   1. Go to https://filterscape.xyz/new-filter
   2. Click 'show advanced options'
   3. Click 'IMPORT' in the 'from a URL' box at the bottom
