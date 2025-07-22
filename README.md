@@ -1,7 +1,7 @@
 # Description
-Mika7150's osrs loot filter for the "loot filters" plugin on runelite. images soon
+Mika7150's osrs loot filter for the "loot filters" plugin on runelite. images coming later
 
-mostly intended for ironmen
+Based on Joe's filter, from the homepage of https://filterscape.xyz
 
 # Installation
 
