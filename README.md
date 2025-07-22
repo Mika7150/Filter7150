@@ -1,4 +1,20 @@
-# Filter7150
+# Description
 Mika7150's osrs loot filter for the "loot filters" plugin on runelite. images soon
 
 mostly intended for ironmen
+
+# Installation
+
+## Github Method -
+  1. Install the 'loot filters' plugin on Runelite
+  2. Download the .rs2f file
+  3. Add it to C:\Users\[USER]\.runelite\loot-filters
+  4. Click the refresh button in the side panel for the plugin in Runelite
+
+## Filterscape.xyz method (Easy editing) -
+  1. Go to https://filterscape.xyz/new-filter
+  2. Click 'show advanced options'
+  3. Click 'IMPORT' in the 'from a URL' box at the bottom
+  4. Paste 'https://raw.githubusercontent.com/Mika7150/Filter7150/refs/heads/main/Filter7150.rs2f' and press IMPORT again.
+  5. Press the small import button top right
+  6. Now, you can edit the filter to your liking, change the colours, enable or disable modules and change which items belong to each categories and their associated values!
