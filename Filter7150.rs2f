@@ -10,6 +10,7 @@ meta { name = "Filter7150"; description = "Mika7150's edited joe filter, mainly 
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -122,6 +123,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -158,6 +160,7 @@ label: Items to always show first
 
 
 
+
 /*@ define:module:filtering
 ---
 name: Filtering
@@ -172,7 +175,7 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball"]
+#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
@@ -1998,7 +2001,7 @@ enum: [
   }
 ]
 */
-#define VAR_HERBS_SHOW ["*Ranarr weed","*Huasca","*Snapdragon","*Torstol","*Harralander","*Tarromin","*Marrentill","*Guam leaf","*Irit leaf","*Toadflax","*Kwuarm","*Avantoe"]
+#define VAR_HERBS_SHOW ["*Ranarr weed","*Huasca","*Snapdragon","*Torstol","*Harralander","*Tarromin","*Marrentill","*Guam leaf","*Irit leaf","*Toadflax","*Kwuarm","*Avantoe","*Harralander","*Tarromin","*Marrentill","*Guam leaf","*Irit leaf","*Toadflax","*Kwuarm","*Avantoe"]
 
 apply (name:VAR_HERBS_SHOW) {
     hidden = false;
@@ -3904,7 +3907,7 @@ enum: [
   "Dragon*"
 ]
 */
-#define VAR_METAL_EQUIPMENT_TIERS_HIDE ["Bronze*","Iron*","Steel*","Black*","Mithril*","Mithril*"]
+#define VAR_METAL_EQUIPMENT_TIERS_HIDE ["Bronze*","Iron*","Steel*","Black*","Mithril*","Mithril*","Mithril*"]
 
 apply ((name:CONST_BRONZE_ONE_HANDED_MELEE_WEAPONS || name:CONST_BRONZE_TWO_HANDED_MELEE_WEAPONS || name:CONST_BRONZE_RANGED_WEAPONS || name:CONST_BRONZE_AMMO || name:CONST_BRONZE_ARMOUR || name:CONST_BRONZE_OTHER) && name:VAR_METAL_EQUIPMENT_TIERS_HIDE && !name:CONST_DEFENDERS_LIST) {
     hidden = true;
@@ -3930,6 +3933,7 @@ apply ((name:CONST_RUNE_ONE_HANDED_MELEE_WEAPONS || name:CONST_RUNE_TWO_HANDED_M
 apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_RANGED_WEAPONS || name:CONST_DRAGON_AMMO || name:CONST_DRAGON_ARMOUR) && name:VAR_METAL_EQUIPMENT_TIERS_HIDE && !name:CONST_DEFENDERS_LIST) {
     hidden = true;
 }
+
 
 
 
@@ -5797,6 +5801,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5848,7 +5853,7 @@ type: stringlist
 label: Manually add items to tier 2
 group: Tier 2
 */
-#define VAR_VALUES_TIER_2_SHOW ["Dossier","Ice quartz","Frozen tablet","Blood quartz","Strangled tablet","Shadow quartz","Sirenic tablet","Smoke quartz","Scarred tablet","Dark claw","Frozen cache","Ancient icon","Curved bone","Kq head"]
+#define VAR_VALUES_TIER_2_SHOW ["Dossier","Ice quartz","Frozen tablet","Blood quartz","Strangled tablet","Shadow quartz","Sirenic tablet","Smoke quartz","Scarred tablet","Dark claw","Frozen cache","Ancient icon","Curved bone","Kq head","Ancient Shard","Dark Totem Top","Dark Totem Middle","Dark Totem Base"]
 
 /*@ define:input:item_tiers
 type: style
@@ -5885,7 +5890,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#ff8e2c8d";backgroundColor = "#d6342936";borderColor = "#ff8e2c8d";textAccentColor = "#FF000000";lootbeamColor = "#ff8e2c8d";menuTextColor = "#ff8e2c8d";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;sound = 10241;icon = CurrentItem();
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#ff8e2c8d";backgroundColor = "#d6342936";borderColor = "#ff8e2c8d";textAccentColor = "#FF000000";lootbeamColor = "#ff8e2c8d";menuTextColor = "#ff8e2c8d";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;sound = 6765;icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5958,6 +5963,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -6012,6 +6018,7 @@ rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
 
 
 
+
 /*@ define:module:alchs
 ---
 name: Alchs
@@ -6061,6 +6068,7 @@ group: Power User
 #define VAR_ALCHS_TERMINATE false
 
 rule (VAR_ALCHS_TERMINATE && name:VAR_ALCHS_ITEM_LIST) {}
+
 
 
 
@@ -6652,7 +6660,7 @@ group: Farming
 exampleItem: Guam seed
 exampleItemId: 5291
 */
-#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE
+#define VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE hidden = false;
 
 apply (name:CONST_FARMING_SEEDS_HERB_LIST) {
   VAR_CATEGORY_FARMING_SEEDS_HERB_CUSTOMSTYLE
@@ -7295,6 +7303,7 @@ exampleItem: Gilded platelegs
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 
 
@@ -11856,6 +11865,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:rare_drop_table
 ---
 name: Rare Drop Table Style
@@ -11964,6 +11974,7 @@ apply (name:"Dragon spear" && quantity:==1) {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -12019,6 +12030,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12806,6 +12818,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
