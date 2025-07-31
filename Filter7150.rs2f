@@ -146,13 +146,13 @@ label: Sort by value
 type: boolean
 label: Prioritize Stackable/noted
 */
-#define VAR_SORTING_MENU_SORT_BY_VALUE_STACKABLES_FIRST true
+#define VAR_SORTING_MENU_SORT_BY_VALUE_STACKABLES_FIRST false
 
 /*@ define:input:sorting
 type: boolean
 label: Prioritize Untradeables
 */
-#define VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST true
+#define VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST false
 
 /*@ define:input:sorting
 type: stringlist
@@ -178,7 +178,7 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball"]
+#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball","ugthanki kebab","broad arrows","magic shortbow (u)","empty spice shaker","long kebbit spike","graahk fur","xerician fabric"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
@@ -189,7 +189,7 @@ type: stringlist
 label: Items to show
 group: Individual Items
 */
-#define VAR_GLOBAL_SHOW ["Loop half of key","Tooth half of key","Rune spear","Shield left half","Dragon spear"]
+#define VAR_GLOBAL_SHOW ["Loop half of key","Tooth half of key","Rune spear","Shield left half","Dragon spear","lizardman fang","cowhide","chilli potato","nail beast nails"]
 
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
@@ -943,7 +943,7 @@ type: number
 label: Standard Arrows minimum value
 group: Ammo
 */
-#define VAR_AMMO_STANDARD_ARROWS_MIN_VALUE 500
+#define VAR_AMMO_STANDARD_ARROWS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_STANDARD_ARROWS_LIST && (name:VAR_AMMO_STANDARD_ARROWS_HIDE || value:<VAR_AMMO_STANDARD_ARROWS_MIN_VALUE)) {
     hidden = true;
@@ -1003,7 +1003,7 @@ type: number
 label: Darts minimum value
 group: Ammo
 */
-#define VAR_AMMO_DARTS_MIN_VALUE 500
+#define VAR_AMMO_DARTS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_DARTS_LIST && (name:VAR_AMMO_DARTS_HIDE || value:<VAR_AMMO_DARTS_MIN_VALUE)) {
     hidden = true;
@@ -1059,7 +1059,7 @@ type: number
 label: Bolts minimum value
 group: Ammo
 */
-#define VAR_AMMO_BOLTS_MIN_VALUE 500
+#define VAR_AMMO_BOLTS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_BOLTS_LIST && (name:VAR_AMMO_BOLTS_HIDE || value:<VAR_AMMO_BOLTS_MIN_VALUE)) {
     hidden = true;
@@ -1119,7 +1119,7 @@ type: number
 label: Enchanted bolts minimum value
 group: Ammo
 */
-#define VAR_AMMO_BOLTS_E_MIN_VALUE 500
+#define VAR_AMMO_BOLTS_E_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_BOLTS_E_LIST && (name:VAR_AMMO_BOLTS_E_HIDE || value:<VAR_AMMO_BOLTS_E_MIN_VALUE)) {
     hidden = true;
@@ -1179,7 +1179,7 @@ type: number
 label: Dragon enchanted bolts minimum value
 group: Ammo
 */
-#define VAR_AMMO_DRAGON_BOLTS_E_MIN_VALUE 500
+#define VAR_AMMO_DRAGON_BOLTS_E_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_DRAGON_BOLTS_E_LIST && (name:VAR_AMMO_DRAGON_BOLTS_E_HIDE || value:<VAR_AMMO_DRAGON_BOLTS_E_MIN_VALUE)) {
     hidden = true;
@@ -1206,7 +1206,7 @@ type: number
 label: Javelins minimum value
 group: Ammo
 */
-#define VAR_AMMO_JAVELINS_MIN_VALUE 500
+#define VAR_AMMO_JAVELINS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_JAVELINS_LIST && (name:VAR_AMMO_JAVELINS_HIDE || value:<VAR_AMMO_JAVELINS_MIN_VALUE)) {
     hidden = true;
@@ -1258,7 +1258,7 @@ type: number
 label: Special bolts minimum value
 group: Ammo
 */
-#define VAR_AMMO_SPECIAL_BOLTS_MIN_VALUE 500
+#define VAR_AMMO_SPECIAL_BOLTS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_SPECIAL_BOLTS_LIST && (name:VAR_AMMO_SPECIAL_BOLTS_HIDE || value:<VAR_AMMO_SPECIAL_BOLTS_MIN_VALUE)) {
     hidden = true;
@@ -1330,7 +1330,7 @@ type: number
 label: Special Arrows minimum value
 group: Ammo
 */
-#define VAR_AMMO_SPECIAL_ARROWS_MIN_VALUE 500
+#define VAR_AMMO_SPECIAL_ARROWS_MIN_VALUE 1000
 
 apply (name:CONST_AMMO_SPECIAL_ARROWS_LIST && (name:VAR_AMMO_SPECIAL_ARROWS_HIDE || value:<VAR_AMMO_SPECIAL_ARROWS_MIN_VALUE)) {
     hidden = true;
