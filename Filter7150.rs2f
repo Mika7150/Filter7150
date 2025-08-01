@@ -12,6 +12,7 @@ meta { name = "Filter7150"; description = "Mika7150's edited joe filter, mainly 
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -40,7 +41,7 @@ label: "Default Stackable/Noted Style"
 exampleItem: Magic shortbow (u)
 exampleItemId: 73
 */
-#define VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE
+#define VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE showDespawn = false;notify = false;
 
 apply (stackable:true || noted:true) {
     VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE 
@@ -126,6 +127,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -164,6 +166,7 @@ label: Items to always show first
 
 
 
+
 /*@ define:module:filtering
 ---
 name: Filtering
@@ -178,7 +181,7 @@ type: stringlist
 label: Items to hide
 group: Individual Items
 */
-#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball","ugthanki kebab","broad arrows","magic shortbow (u)","empty spice shaker","long kebbit spike","graahk fur","xerician fabric"]
+#define VAR_GLOBAL_HIDE ["broken arrow","old boot","pigeon cage","monkey corpse","insect repellent","stone ball","pigeon cage","monkey corpse","insect repellent","stone ball","ugthanki kebab","broad arrows","magic shortbow (u)","empty spice shaker","long kebbit spike","graahk fur","xerician fabric","ugthanki kebab","broad arrows","magic shortbow (u)","empty spice shaker","long kebbit spike","graahk fur","xerician fabric"]
 
 apply (name:VAR_GLOBAL_HIDE) {
     hidden = true;
@@ -189,7 +192,7 @@ type: stringlist
 label: Items to show
 group: Individual Items
 */
-#define VAR_GLOBAL_SHOW ["Loop half of key","Tooth half of key","Rune spear","Shield left half","Dragon spear","lizardman fang","cowhide","chilli potato","nail beast nails"]
+#define VAR_GLOBAL_SHOW ["Loop half of key","Tooth half of key","Rune spear","Shield left half","Dragon spear","lizardman fang","cowhide","chilli potato","nail beast nails","lizardman fang","cowhide","chilli potato","nail beast nails"]
 
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
@@ -3941,6 +3944,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5807,6 +5811,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
 
 
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5895,7 +5900,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#ff8e2c8d";backgroundColor = "#d6342936";borderColor = "#ff8e2c8d";textAccentColor = "#FF000000";lootbeamColor = "#ff8e2c8d";menuTextColor = "#ff8e2c8d";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;sound = 10241;icon = CurrentItem();
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#ff8e2c8d";backgroundColor = "#d6342936";borderColor = "#ff8e2c8d";textAccentColor = "#FF000000";lootbeamColor = "#ff8e2c8d";menuTextColor = "#ff8e2c8d";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;sound = 6765;icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5970,6 +5975,7 @@ rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:
 
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -5984,7 +5990,7 @@ label: Uniques custom style
 exampleItem: Tanzanite fang
 exampleItemId: 12922
 */
-#define VAR_UNIQUES_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#f02b271d";borderColor = "#FFFF9600";textAccentColor = "#FF000000";lootbeamColor = "#ffc55e00";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;highlightTile = false;sound = 10241;icon = CurrentItem();
+#define VAR_UNIQUES_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#f02b271d";borderColor = "#FFFF9600";textAccentColor = "#FF000000";lootbeamColor = "#ffc55e00";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;highlightTile = false;sound = 6765;icon = CurrentItem();
 
 
 
@@ -6021,6 +6027,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE false
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -6075,6 +6082,7 @@ group: Power User
 #define VAR_ALCHS_TERMINATE false
 
 rule (VAR_ALCHS_TERMINATE && name:VAR_ALCHS_ITEM_LIST) {}
+
 
 
 
@@ -7311,6 +7319,7 @@ exampleItem: Gilded platelegs
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 
 
@@ -11876,6 +11885,7 @@ apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
 
 
 
+
 /*@ define:module:rare_drop_table
 ---
 name: Rare Drop Table Style
@@ -11986,6 +11996,7 @@ apply (name:"Dragon spear" && quantity:==1) {
 
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -12041,6 +12052,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 
 
@@ -12830,6 +12842,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
