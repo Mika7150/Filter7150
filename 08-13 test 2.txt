@@ -5818,7 +5818,7 @@ group: Tier 1
 exampleItem: Rune Scimitar
 exampleItemId: 1333
 */
-#define VAR_VALUES_TIER_1_CUSTOMSTYLE textColor = "#ff2ed300"
+#define VAR_VALUES_TIER_1_CUSTOMSTYLE textColor = "#ff2ed300";
 
 apply ((value:>=VAR_VALUES_TIER_1_VALUE && value:<VAR_VALUES_TIER_2_VALUE) || name:VAR_VALUES_TIER_1_SHOW) {
     VAR_VALUES_TIER_1_CUSTOMSTYLE 
