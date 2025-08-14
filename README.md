@@ -5,15 +5,9 @@ Based on Joe's filter, from the homepage of https://filterscape.xyz
 
 ## Showcase Images
 
-<img width="798" height="451" alt="image" src="https://github.com/user-attachments/assets/a33222d0-2ab6-40b8-b03f-cb2e17624b21" />
+WIP
 
 # Installation
-
-## Github Method 
-  1. Install the 'loot filters' plugin on Runelite
-  2. Download the .rs2f file
-  3. Add it to C:\Users\\[USER]\\.runelite\loot-filters
-  4. Click the refresh button in the side panel for the plugin in Runelite
 
 ## Filterscape.xyz method (Recommended) 
   1. Go to https://filterscape.xyz/new-filter
@@ -24,5 +18,3 @@ Based on Joe's filter, from the homepage of https://filterscape.xyz
   6. Now, you can edit the filter to your liking, change the colours, enable or disable modules and change which items belong to each categories and their associated values!
   7. When done editing, press export to runelite which will copy it to your clipboard
   8. Import it via the import button top left of the plugins' sidebar
-
-Note: personal filter for my use specifically, you probably won't like it.
