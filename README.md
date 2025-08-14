@@ -12,7 +12,7 @@ Based on Joe's filter, from the homepage of https://filterscape.xyz
 ## Github Method 
   1. Install the 'loot filters' plugin on Runelite
   2. Download the .rs2f file
-  3. Add it to C:\Users\\[USER]\.runelite\loot-filters
+  3. Add it to C:\Users\\[USER]\\.runelite\loot-filters
   4. Click the refresh button in the side panel for the plugin in Runelite
 
 ## Filterscape.xyz method (Easy editing) 
