@@ -5,7 +5,7 @@ name: header
 
 /* Built on: Wed Jul 30 16:11:42 UTC 2025 */
 /* Commit: c8724fe */
-meta { name = "Filter7150 V2 (Iron)"; description = "Mika7150's V2 filter, personal version"; }
+meta { name = "Filter7150 V3 (Iron)"; description = "Mika7150's V3 filter, personal version/for irons"; }
 
 
 
