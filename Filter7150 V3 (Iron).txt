@@ -15,6 +15,7 @@ meta { name = "Filter7150 V3 (Iron)"; description = "Mika7150's V3 filter, perso
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -132,6 +133,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -165,6 +167,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3949,6 +3952,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 }
 
 
+
 /*@ define:module:individual_unique_styles
 name: Individual Unique Item Styles
 subtitle: Individual unique items
@@ -3961,7 +3965,7 @@ type: style
 label: Jar of dirt
 exampleItem: Jar of dirt
 */
-#define VAR_UNIQUE_JAR_OF_DIRT_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_DIRT_CUSTOMSTYLE textColor = "#7D7C63";backgroundColor = "#a38c8282";borderColor = "#7D7C63";lootbeamColor = "#7D7C63";menuTextColor = "#7D7C63";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of dirt") {
     VAR_UNIQUE_JAR_OF_DIRT_CUSTOMSTYLE 
@@ -3972,7 +3976,7 @@ type: style
 label: Jar of swamp
 exampleItem: Jar of swamp
 */
-#define VAR_UNIQUE_JAR_OF_SWAMP_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_SWAMP_CUSTOMSTYLE textColor = "#095A23";backgroundColor = "#a38c8282";borderColor = "#095A23";lootbeamColor = "#095A23";menuTextColor = "#095A23";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of swamp") {
     VAR_UNIQUE_JAR_OF_SWAMP_CUSTOMSTYLE 
@@ -3983,7 +3987,7 @@ type: style
 label: Jar of sand
 exampleItem: Jar of sand
 */
-#define VAR_UNIQUE_JAR_OF_SAND_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_SAND_CUSTOMSTYLE textColor = "#D4C962";backgroundColor = "#a38c8282";borderColor = "#D4C962";lootbeamColor = "#D4C962";menuTextColor = "#D4C962";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of sand") {
     VAR_UNIQUE_JAR_OF_SAND_CUSTOMSTYLE 
@@ -3994,7 +3998,7 @@ type: style
 label: Jar of souls
 exampleItem: Jar of souls
 */
-#define VAR_UNIQUE_JAR_OF_SOULS_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_SOULS_CUSTOMSTYLE backgroundColor = "#a38c8282";textAccent = 1;fontType = 2;sound = 2136;
 
 apply (name:"Jar of souls") {
     VAR_UNIQUE_JAR_OF_SOULS_CUSTOMSTYLE 
@@ -4005,7 +4009,7 @@ type: style
 label: Jar of miasma
 exampleItem: Jar of miasma
 */
-#define VAR_UNIQUE_JAR_OF_MIASMA_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_MIASMA_CUSTOMSTYLE textColor = "#B9B9E3";backgroundColor = "#a38c8282";borderColor = "#B9B9E3";lootbeamColor = "#B9B9E3";menuTextColor = "#B9B9E3";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of miasma") {
     VAR_UNIQUE_JAR_OF_MIASMA_CUSTOMSTYLE 
@@ -4016,7 +4020,7 @@ type: style
 label: Jar of darkness
 exampleItem: Jar of darkness
 */
-#define VAR_UNIQUE_JAR_OF_DARKNESS_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_DARKNESS_CUSTOMSTYLE textColor = "#151111";backgroundColor = "#a38c8282";borderColor = "#151111";lootbeamColor = "#151111";menuTextColor = "#151111";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of darkness") {
     VAR_UNIQUE_JAR_OF_DARKNESS_CUSTOMSTYLE 
@@ -4027,7 +4031,7 @@ type: style
 label: Jar of stone
 exampleItem: Jar of stone
 */
-#define VAR_UNIQUE_JAR_OF_STONE_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_STONE_CUSTOMSTYLE textColor = "#A2AEAF";backgroundColor = "#a38c8282";borderColor = "#A2AEAF";lootbeamColor = "#A2AEAF";menuTextColor = "#A2AEAF";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of stone") {
     VAR_UNIQUE_JAR_OF_STONE_CUSTOMSTYLE 
@@ -4038,7 +4042,7 @@ type: style
 label: Jar of decay
 exampleItem: Jar of decay
 */
-#define VAR_UNIQUE_JAR_OF_DECAY_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_DECAY_CUSTOMSTYLE textColor = "#94CCB0";backgroundColor = "#a38c8282";borderColor = "#94CCB0";lootbeamColor = "#94CCB0";menuTextColor = "#94CCB0";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of decay") {
     VAR_UNIQUE_JAR_OF_DECAY_CUSTOMSTYLE 
@@ -4049,7 +4053,7 @@ type: style
 label: Jar of chemicals
 exampleItem: Jar of chemicals
 */
-#define VAR_UNIQUE_JAR_OF_CHEMICALS_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_CHEMICALS_CUSTOMSTYLE textColor = "#95F8FC";backgroundColor = "#a38c8282";borderColor = "#95F8FC";lootbeamColor = "#95F8FC";menuTextColor = "#95F8FC";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of chemicals") {
     VAR_UNIQUE_JAR_OF_CHEMICALS_CUSTOMSTYLE 
@@ -4060,7 +4064,7 @@ type: style
 label: Jar of eyes
 exampleItem: Jar of eyes
 */
-#define VAR_UNIQUE_JAR_OF_EYES_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_EYES_CUSTOMSTYLE textColor = "#A47672";backgroundColor = "#a38c8282";borderColor = "#A47672";lootbeamColor = "#A47672";menuTextColor = "#A47672";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of eyes") {
     VAR_UNIQUE_JAR_OF_EYES_CUSTOMSTYLE 
@@ -4071,7 +4075,7 @@ type: style
 label: Jar of dreams
 exampleItem: Jar of dreams
 */
-#define VAR_UNIQUE_JAR_OF_DREAMS_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_DREAMS_CUSTOMSTYLE textColor = "#F8F8F8";backgroundColor = "#a38c8282";borderColor = "#F8F8F8";lootbeamColor = "#F8F8F8";menuTextColor = "#F8F8F8";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of dreams") {
     VAR_UNIQUE_JAR_OF_DREAMS_CUSTOMSTYLE 
@@ -4082,7 +4086,7 @@ type: style
 label: Jar of spirits
 exampleItem: Jar of spirits
 */
-#define VAR_UNIQUE_JAR_OF_SPIRITS_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_SPIRITS_CUSTOMSTYLE textColor = "#BEB19B";backgroundColor = "#a38c8282";borderColor = "#BEB19B";lootbeamColor = "#BEB19B";menuTextColor = "#BEB19B";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of spirits") {
     VAR_UNIQUE_JAR_OF_SPIRITS_CUSTOMSTYLE 
@@ -4093,7 +4097,7 @@ type: style
 label: Jar of smoke
 exampleItem: Jar of smoke
 */
-#define VAR_UNIQUE_JAR_OF_SMOKE_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_SMOKE_CUSTOMSTYLE textColor = "#FCF983";backgroundColor = "#a38c8282";borderColor = "#FCF983";lootbeamColor = "#FCF983";menuTextColor = "#FCF983";textAccent = 1;fontType = 2;showLootbeam = true;sound = 2136;icon = CurrentItem();
 
 apply (name:"Jar of smoke") {
     VAR_UNIQUE_JAR_OF_SMOKE_CUSTOMSTYLE 
@@ -4104,7 +4108,7 @@ type: style
 label: Jar of venom
 exampleItem: Jar of venom
 */
-#define VAR_UNIQUE_JAR_OF_VENOM_CUSTOMSTYLE
+#define VAR_UNIQUE_JAR_OF_VENOM_CUSTOMSTYLE textColor = "#119254";backgroundColor = "#8a000000";borderColor = "#119254";lootbeamColor = "#119254";menuTextColor = "#119254";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Jar of venom") {
     VAR_UNIQUE_JAR_OF_VENOM_CUSTOMSTYLE 
@@ -4115,7 +4119,7 @@ type: style
 label: Black tourmaline core
 exampleItem: Black tourmaline core
 */
-#define VAR_UNIQUE_BLACK_TOURMALINE_CORE_CUSTOMSTYLE
+#define VAR_UNIQUE_BLACK_TOURMALINE_CORE_CUSTOMSTYLE textColor = "#3D5C3F";backgroundColor = "#001D00";borderColor = "#3D5C3F";lootbeamColor = "#3D5C3F";menuTextColor = "#ff008909";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Black tourmaline core") {
     VAR_UNIQUE_BLACK_TOURMALINE_CORE_CUSTOMSTYLE 
@@ -4126,7 +4130,7 @@ type: style
 label: Granite gloves
 exampleItem: Granite gloves
 */
-#define VAR_UNIQUE_GRANITE_GLOVES_CUSTOMSTYLE
+#define VAR_UNIQUE_GRANITE_GLOVES_CUSTOMSTYLE textColor = "#54544E";backgroundColor = "#db8c8c82";borderColor = "#54544E";lootbeamColor = "#54544E";menuTextColor = "#ff000000";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Granite gloves") {
     VAR_UNIQUE_GRANITE_GLOVES_CUSTOMSTYLE 
@@ -4137,7 +4141,7 @@ type: style
 label: Granite ring
 exampleItem: Granite ring
 */
-#define VAR_UNIQUE_GRANITE_RING_CUSTOMSTYLE
+#define VAR_UNIQUE_GRANITE_RING_CUSTOMSTYLE textColor = "#54544E";backgroundColor = "#db8c8c82";borderColor = "#54544E";lootbeamColor = "#54544E";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Granite ring") {
     VAR_UNIQUE_GRANITE_RING_CUSTOMSTYLE 
@@ -4148,7 +4152,7 @@ type: style
 label: Granite hammer
 exampleItem: Granite hammer
 */
-#define VAR_UNIQUE_GRANITE_HAMMER_CUSTOMSTYLE
+#define VAR_UNIQUE_GRANITE_HAMMER_CUSTOMSTYLE textColor = "#54544E";backgroundColor = "#db8c8c82";borderColor = "#54544E";lootbeamColor = "#54544E";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Granite hammer") {
     VAR_UNIQUE_GRANITE_HAMMER_CUSTOMSTYLE 
@@ -4159,7 +4163,7 @@ type: style
 label: Abyssal head
 exampleItem: Abyssal head
 */
-#define VAR_UNIQUE_ABYSSAL_HEAD_CUSTOMSTYLE
+#define VAR_UNIQUE_ABYSSAL_HEAD_CUSTOMSTYLE textColor = "#904C11";backgroundColor = "#a6403b3b";borderColor = "#904C11";lootbeamColor = "#904C11";menuTextColor = "#904C11";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Abyssal head") {
     VAR_UNIQUE_ABYSSAL_HEAD_CUSTOMSTYLE 
@@ -4167,35 +4171,13 @@ apply (name:"Abyssal head") {
 
 /*@ define:input:individual_unique_styles
 type: style
-label: Bludgeon spine
-exampleItem: Bludgeon spine
+label: Unsired
+exampleItem: Unsired
 */
-#define VAR_UNIQUE_BLUDGEON_SPINE_CUSTOMSTYLE
+#define VAR_UNIQUE_UNSIRED_CUSTOMSTYLE
 
-apply (name:"Bludgeon spine") {
-    VAR_UNIQUE_BLUDGEON_SPINE_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Bludgeon claw
-exampleItem: Bludgeon claw
-*/
-#define VAR_UNIQUE_BLUDGEON_CLAW_CUSTOMSTYLE
-
-apply (name:"Bludgeon claw") {
-    VAR_UNIQUE_BLUDGEON_CLAW_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Bludgeon axon
-exampleItem: Bludgeon axon
-*/
-#define VAR_UNIQUE_BLUDGEON_AXON_CUSTOMSTYLE
-
-apply (name:"Bludgeon axon") {
-    VAR_UNIQUE_BLUDGEON_AXON_CUSTOMSTYLE 
+apply (name:"Unsired") {
+    VAR_UNIQUE_UNSIRED_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_unique_styles
@@ -6284,7 +6266,8 @@ group: Power User
 */
 #define VAR_INDIVIDUAL_UNIQUE true
 
-rule (VAR_INDIVIDUAL_UNIQUE && name:["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Bludgeon spine","Bludgeon claw","Bludgeon axon","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+rule (VAR_INDIVIDUAL_UNIQUE && name:["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Unsired","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+
 
 
 
@@ -6414,6 +6397,7 @@ apply (name:"Brimstone key") {
 }
 
 
+
 /*@ define:module:highlighted
 ---
 name: Highlighted Items
@@ -6474,6 +6458,7 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE false
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
+
 
 
 
@@ -6669,6 +6654,7 @@ rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE && value:<VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
 rule (VAR_VALUES_TIER_5_TERMINATE && ((value:>=VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_5_SHOW)) {}
+
 
 
 
@@ -7460,6 +7446,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
