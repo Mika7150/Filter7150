@@ -3,6 +3,8 @@ Mika7150's osrs loot filter for the "loot filters" plugin on runelite.
 
 Based on Joe's filter, from the homepage of https://filterscape.xyz
 
+The file with (iron) in the name is primarily made for and by me personally, the primary file is mostly empty and requires some user input on filtering, the tier values, and what you want highlighted.
+
 ## Showcase Images
 
 WIP
