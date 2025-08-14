@@ -5,7 +5,7 @@ name: header
 
 /* Built on: Wed Jul 30 16:11:42 UTC 2025 */
 /* Commit: c8724fe */
-meta { name = "Filter7150 V2 (Main)"; description = "Mika7150's V2 filter, primary version, mostly intended for mains and/or people who will edit the filter"; }
+meta { name = "Filter7150 V2 (Personal)"; description = "Mika7150's V2 filter, personal version"; }
 
 
 
@@ -3940,6 +3940,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 }
 
 
+
 /*@ define:module:item_category_styles
 name: Item Styles
 subtitle: Individual items and categories
@@ -4106,6 +4107,8 @@ rule (VAR_SLAYER_ETERNAL_GEM_TERMINATE) {}
 rule (VAR_SLAYER_IMBUED_HEART_TERMINATE) {}
 
 
+
+
 /*@ define:module:highlighted
 ---
 name: Highlighted Items
@@ -4143,6 +4146,8 @@ group: Power User
 #define VAR_HIGHLIGHTED_TERMINATE false
 
 rule (VAR_HIGHLIGHTED_TERMINATE && name:VAR_HIGHLIGHTED_LIST) {}
+
+
 
 
 /*@ define:module:item_tiers
@@ -4220,7 +4225,7 @@ type: stringlist
 label: Manually add items to tier 3
 group: Tier 3
 */
-#define VAR_VALUES_TIER_3_SHOW ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Dark bow","Uncharged trident"]
+#define VAR_VALUES_TIER_3_SHOW ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody" "Obsidian platelegs","Dark bow","Uncharged trident"]
 
 /*@ define:input:item_tiers
 type: style
@@ -4313,7 +4318,7 @@ type: boolean
 label: Dont let tier 3 items get filtered out or restyled in future modules
 group: Power User
 */
-#define VAR_VALUES_TIER_3_TERMINATE true
+#define VAR_VALUES_TIER_3_TERMINATE false
 
 /*@ define:input:item_tiers
 type: boolean
@@ -4391,7 +4396,6 @@ group: Power User
 #define VAR_UNIQUES_TERMINATE false
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
-
 
 
 
