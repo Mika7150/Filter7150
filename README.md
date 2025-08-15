@@ -1,9 +1,7 @@
 # Description
 Mika7150's osrs loot filter for the "loot filters" plugin on runelite.
 
-Based on Joe's filter, from the homepage of https://filterscape.xyz
-
-The file with (iron) in the name is primarily made for and by me personally, the primary file is mostly empty and requires some user input on filtering, the tier values, and what you want highlighted.
+Based loosely on Joe's filter, from the homepage of https://filterscape.xyz
 
 ## Showcase Images
 
@@ -15,7 +13,7 @@ WIP
   1. Go to https://filterscape.xyz/new-filter
   2. Click 'show advanced options'
   3. Click 'IMPORT' in the 'from a URL' box at the bottom
-  4. Paste " https://raw.githubusercontent.com/Mika7150/Filter7150/refs/heads/main/Filter7150%20V2.rs2f " without the quotes and press IMPORT again.
+  4. Paste " https://raw.githubusercontent.com/Mika7150/Filter7150/refs/heads/main/Filter7150%20V3.rs2f " without the quotes and press IMPORT again.
   5. Press the small import button top right
   6. Now, you can edit the filter to your liking, change the colours, enable or disable modules and change which items belong to each categories and their associated values!
   7. When done editing, press export to runelite which will copy it to your clipboard
