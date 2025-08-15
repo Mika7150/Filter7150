@@ -34,7 +34,7 @@ label: Default Style
 exampleItem: Santa hat
 exampleItemId: 1050
 */
-#define VAR_GLOBAL_CUSTOMSTYLE textColor = "#FFFFFFFF";showDespawn = false;
+#define VAR_GLOBAL_CUSTOMSTYLE fontType = 1;showDespawn = false;
 
 apply (true) {
     VAR_GLOBAL_CUSTOMSTYLE 
@@ -6345,7 +6345,7 @@ type: stringlist
 label: Highlighted Items
 group: Highlighted Items List
 */
-#define VAR_HIGHLIGHTED_LIST ["Lizardman fang","mark of grace","xeric's talisman (inert)","alchemist's signet"]
+#define VAR_HIGHLIGHTED_LIST ["mark of grace","xeric's talisman (inert)","alchemist's signet"]
 
 apply (name:VAR_HIGHLIGHTED_LIST) {
     VAR_HIGHLIGHTED_CUSTOMSTYLE 
@@ -6462,7 +6462,7 @@ type: number
 label: Put items above this value in tier 4
 group: Tier 4
 */
-#define VAR_VALUES_TIER_4_VALUE 2000000000
+#define VAR_VALUES_TIER_4_VALUE 1000000
 
 /*@ define:input:item_tiers
 type: stringlist
@@ -6490,7 +6490,7 @@ type: number
 label: Put items above this value in tier 5
 group: Tier 5
 */
-#define VAR_VALUES_TIER_5_VALUE 2000000001
+#define VAR_VALUES_TIER_5_VALUE 10000000
 
 /*@ define:input:item_tiers
 type: stringlist
@@ -6539,14 +6539,14 @@ type: boolean
 label: Dont let tier 4 items get filtered out or restyled in future modules
 group: Power User
 */
-#define VAR_VALUES_TIER_4_TERMINATE true
+#define VAR_VALUES_TIER_4_TERMINATE false
 
 /*@ define:input:item_tiers
 type: boolean
 label: Dont let tier 5 items get filtered out or restyled in future modules
 group: Power User
 */
-#define VAR_VALUES_TIER_5_TERMINATE true
+#define VAR_VALUES_TIER_5_TERMINATE false
 
 rule (VAR_VALUES_TIER_1_TERMINATE && ((value:>=VAR_VALUES_TIER_1_VALUE && value:<VAR_VALUES_TIER_2_VALUE) || name:VAR_VALUES_TIER_1_SHOW)) {}
 rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:<VAR_VALUES_TIER_3_VALUE) || name:VAR_VALUES_TIER_2_SHOW)) {}
