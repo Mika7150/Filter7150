@@ -1,7 +1,7 @@
 # Description
 Mika7150's osrs loot filter for the "loot filters" plugin on runelite.
 
-Based loosely on [Joe's filter](https://github.com/typical-whack/loot-filters-modules)
+Based on [Joe's filter](https://github.com/typical-whack/loot-filters-modules)
 
 ## Showcase Image
 
