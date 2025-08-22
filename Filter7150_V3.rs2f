@@ -2,7 +2,7 @@
 hidden: true
 name: header
 */
-meta { name = "Filter7150 V3"; description = "Mika7150's V3 filter, with every boss unique given its own style!"; }
+meta { name = "Filter7150_V3"; description = "Mika7150's V3 filter, with every boss unique given its own style!"; }
 
 
 
