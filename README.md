@@ -5,7 +5,8 @@ Based on [Joe's filter](https://github.com/typical-whack/loot-filters-modules)
 
 ## Showcase Image
 
-<img width="588" height="474" alt="image" src="https://github.com/user-attachments/assets/4ed70102-49ec-41f9-97f8-c283651fe56b" />
+
+<img width="726" height="719" alt="previewfilter" src="https://github.com/user-attachments/assets/01db2e9a-2f4b-44b6-8b77-5db278d1b50a" />
 
 
 # Installation
