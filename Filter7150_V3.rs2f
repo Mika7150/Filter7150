@@ -2,19 +2,7 @@
 hidden: true
 name: header
 */
-
-/* Built on: Wed Jul 30 16:11:42 UTC 2025 */
-/* Commit: c8724fe */
 meta { name = "Filter7150 V3"; description = "Mika7150's V3 filter, with every boss unique given its own style!"; }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -140,6 +128,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -173,6 +162,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -222,7 +212,7 @@ type: number
 label: Hide items below this value
 group: Value-Based
 */
-#define VAR_GLOBAL_MINIMUM_VALUE 1000
+#define VAR_GLOBAL_MINIMUM_VALUE 500
 
 apply ((tradeable:true || name:CONST_GLOBAL_TRADEABLE_NON_TRADEABLE_ITEMS) && value:<VAR_GLOBAL_MINIMUM_VALUE) {
     hidden = true;
@@ -1414,7 +1404,7 @@ type: number
 label: Sapphire minimum quantity
 group: Gems
 */
-#define VAR_SAPPHIRE_MIN_QUANTITY 0
+#define VAR_SAPPHIRE_MIN_QUANTITY 2
 
 apply (name:["Uncut sapphire",   "Sapphire", ] && quantity:<VAR_SAPPHIRE_MIN_QUANTITY) {
     hidden = true;
@@ -1425,7 +1415,7 @@ type: number
 label: Emerald minimum quantity
 group: Gems
 */
-#define VAR_EMERALD_MIN_QUANTITY 0
+#define VAR_EMERALD_MIN_QUANTITY 2
 
 apply (name:["Uncut emerald",   "Emerald", ] && quantity:<VAR_EMERALD_MIN_QUANTITY) {
     hidden = true;
@@ -1436,7 +1426,7 @@ type: number
 label: Ruby minimum quantity
 group: Gems
 */
-#define VAR_RUBY_MIN_QUANTITY 0
+#define VAR_RUBY_MIN_QUANTITY 2
 
 apply (name:["Uncut ruby",   "Ruby", ] && quantity:<VAR_RUBY_MIN_QUANTITY) {
     hidden = true;
@@ -1447,7 +1437,7 @@ type: number
 label: Diamond minimum quantity
 group: Gems
 */
-#define VAR_DIAMOND_MIN_QUANTITY 0
+#define VAR_DIAMOND_MIN_QUANTITY 2
 
 apply (name:["Uncut diamond",   "Diamond", ] && quantity:<VAR_DIAMOND_MIN_QUANTITY) {
     hidden = true;
@@ -1458,7 +1448,7 @@ type: number
 label: Opal minimum quantity
 group: Gems
 */
-#define VAR_OPAL_MIN_QUANTITY 0
+#define VAR_OPAL_MIN_QUANTITY 2
 
 apply (name:["Uncut opal",   "Opal", ] && quantity:<VAR_OPAL_MIN_QUANTITY) {
     hidden = true;
@@ -1469,7 +1459,7 @@ type: number
 label: Jade minimum quantity
 group: Gems
 */
-#define VAR_JADE_MIN_QUANTITY 0
+#define VAR_JADE_MIN_QUANTITY 2
 
 apply (name:["Uncut jade",   "Jade", ] && quantity:<VAR_JADE_MIN_QUANTITY) {
     hidden = true;
@@ -1480,7 +1470,7 @@ type: number
 label: Red topaz minimum quantity
 group: Gems
 */
-#define VAR_RED_TOPAZ_MIN_QUANTITY 0
+#define VAR_RED_TOPAZ_MIN_QUANTITY 2
 
 apply (name:["Uncut red topaz",   "Red topaz", ] && quantity:<VAR_RED_TOPAZ_MIN_QUANTITY) {
     hidden = true;
@@ -1491,7 +1481,7 @@ type: number
 label: Dragonstone minimum quantity
 group: Gems
 */
-#define VAR_DRAGONSTONE_MIN_QUANTITY 0
+#define VAR_DRAGONSTONE_MIN_QUANTITY 2
 
 apply (name:["Uncut dragonstone",   "Dragonstone", ] && quantity:<VAR_DRAGONSTONE_MIN_QUANTITY) {
     hidden = true;
@@ -1553,77 +1543,77 @@ type: number
 label: Air rune minimum quantity
 group: Runes
 */
-#define VAR_AIR_RUNE_MIN_QUANTITY 0
+#define VAR_AIR_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Water rune minimum quantity
 group: Runes
 */
-#define VAR_WATER_RUNE_MIN_QUANTITY 0
+#define VAR_WATER_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Earth rune minimum quantity
 group: Runes
 */
-#define VAR_EARTH_RUNE_MIN_QUANTITY 0
+#define VAR_EARTH_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Fire rune minimum quantity
 group: Runes
 */
-#define VAR_FIRE_RUNE_MIN_QUANTITY 0
+#define VAR_FIRE_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Mind rune minimum quantity
 group: Runes
 */
-#define VAR_MIND_RUNE_MIN_QUANTITY 0
+#define VAR_MIND_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Body rune minimum quantity
 group: Runes
 */
-#define VAR_BODY_RUNE_MIN_QUANTITY 0
+#define VAR_BODY_RUNE_MIN_QUANTITY 200
 
 /*@ define:input:runes
 type: number
 label: Cosmic rune minimum quantity
 group: Runes
 */
-#define VAR_COSMIC_RUNE_MIN_QUANTITY 0
+#define VAR_COSMIC_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Chaos rune minimum quantity
 group: Runes
 */
-#define VAR_CHAOS_RUNE_MIN_QUANTITY 0
+#define VAR_CHAOS_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Nature rune minimum quantity
 group: Runes
 */
-#define VAR_NATURE_RUNE_MIN_QUANTITY 0
+#define VAR_NATURE_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Law rune minimum quantity
 group: Runes
 */
-#define VAR_LAW_RUNE_MIN_QUANTITY 0
+#define VAR_LAW_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Death rune minimum quantity
 group: Runes
 */
-#define VAR_DEATH_RUNE_MIN_QUANTITY 0
+#define VAR_DEATH_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
@@ -1637,77 +1627,77 @@ type: number
 label: Astral rune minimum quantity
 group: Runes
 */
-#define VAR_ASTRAL_RUNE_MIN_QUANTITY 0
+#define VAR_ASTRAL_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Blood rune minimum quantity
 group: Runes
 */
-#define VAR_BLOOD_RUNE_MIN_QUANTITY 0
+#define VAR_BLOOD_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Soul rune minimum quantity
 group: Runes
 */
-#define VAR_SOUL_RUNE_MIN_QUANTITY 0
+#define VAR_SOUL_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Wrath rune minimum quantity
 group: Runes
 */
-#define VAR_WRATH_RUNE_MIN_QUANTITY 0
+#define VAR_WRATH_RUNE_MIN_QUANTITY 5
 
 /*@ define:input:runes
 type: number
 label: Mist rune minimum quantity
 group: Runes
 */
-#define VAR_MIST_RUNE_MIN_QUANTITY 0
+#define VAR_MIST_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Dust rune minimum quantity
 group: Runes
 */
-#define VAR_DUST_RUNE_MIN_QUANTITY 0
+#define VAR_DUST_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Mud rune minimum quantity
 group: Runes
 */
-#define VAR_MUD_RUNE_MIN_QUANTITY 0
+#define VAR_MUD_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Smoke rune minimum quantity
 group: Runes
 */
-#define VAR_SMOKE_RUNE_MIN_QUANTITY 0
+#define VAR_SMOKE_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Steam rune minimum quantity
 group: Runes
 */
-#define VAR_STEAM_RUNE_MIN_QUANTITY 0
+#define VAR_STEAM_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Lava rune minimum quantity
 group: Runes
 */
-#define VAR_LAVA_RUNE_MIN_QUANTITY 0
+#define VAR_LAVA_RUNE_MIN_QUANTITY 20
 
 /*@ define:input:runes
 type: number
 label: Aether rune minimum quantity
 group: Runes
 */
-#define VAR_AETHER_RUNE_MIN_QUANTITY 0
+#define VAR_AETHER_RUNE_MIN_QUANTITY 20
 
 apply (name:VAR_RUNES_HIDE) {
     hidden = true;
@@ -3360,14 +3350,14 @@ type: enumlist
 label: Fruit tree seeds to force shown
 group: Farming seeds
 enum: [
-  "Apple seed",
-  "Banana seed",
-  "Orange seed",
-  "Curry seed",
+  "Apple tree seed",
+  "Banana tree seed",
+  "Orange tree seed",
+  "Curry tree seed",
   "Pineapple seed",
-  "Papaya seed",
+  "Papaya tree seed",
   "Palm tree seed",
-  "Dragonfruit seed"
+  "Dragonfruit tree seed"
 ]
 */
 #define VAR_FARMING_SEEDS_FRUIT_TREE_SHOW []
@@ -3959,6 +3949,7 @@ apply ((name:CONST_RUNE_ONE_HANDED_MELEE_WEAPONS || name:CONST_RUNE_TWO_HANDED_M
 apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_RANGED_WEAPONS || name:CONST_DRAGON_AMMO || name:CONST_DRAGON_ARMOUR) && name:VAR_METAL_EQUIPMENT_TIERS_HIDE && !name:CONST_DEFENDERS_LIST) {
     hidden = true;
 }
+
 
 
 
@@ -5484,7 +5475,7 @@ type: style
 label: Dark claw
 exampleItem: Dark claw
 */
-#define VAR_UNIQUE_DARK_CLAW_CUSTOMSTYLE textColor = "#ffa350db";backgroundColor = "#4c4646";borderColor = "#3e1557";lootbeamColor = "#ffa350db";menuTextColor = "#ffa350db";textAccent = 1;fontType = 2;showLootbeam = true;sound = 0;icon = CurrentItem();
+#define VAR_UNIQUE_DARK_CLAW_CUSTOMSTYLE textColor = "#ffa350db";backgroundColor = "#4c4646";borderColor = "#3e1557";lootbeamColor = "#ffa350db";menuTextColor = "#ffa350db";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Dark claw") {
     VAR_UNIQUE_DARK_CLAW_CUSTOMSTYLE 
@@ -5495,7 +5486,7 @@ type: style
 label: Dark totem
 exampleItem: Dark totem
 */
-#define VAR_UNIQUE_DARK_TOTEM_CUSTOMSTYLE textColor = "#155c18";backgroundColor = "#b08290a0";borderColor = "#2a73a8";lootbeamColor = "#3085c3";menuTextColor = "#3085c3";textAccent = 1;fontType = 2;showLootbeam = true;sound = 0;icon = CurrentItem();
+#define VAR_UNIQUE_DARK_TOTEM_CUSTOMSTYLE textColor = "#155c18";backgroundColor = "#b08290a0";borderColor = "#2a73a8";lootbeamColor = "#3085c3";menuTextColor = "#3085c3";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Dark totem" || name:"Dark totem base" || name:"Dark totem middle" || name:"Dark totem top") {
     VAR_UNIQUE_DARK_TOTEM_CUSTOMSTYLE 
@@ -5506,7 +5497,7 @@ type: style
 label: Ancient shard
 exampleItem: Ancient shard
 */
-#define VAR_UNIQUE_ANCIENT_SHARD_CUSTOMSTYLE textColor = "#ffa350db";backgroundColor = "#4c4646";borderColor = "#3e1557";lootbeamColor = "#ffa350db";menuTextColor = "#ffa350db";textAccent = 1;fontType = 2;showLootbeam = true;sound = 0;icon = CurrentItem();
+#define VAR_UNIQUE_ANCIENT_SHARD_CUSTOMSTYLE textColor = "#ffa350db";backgroundColor = "#4c4646";borderColor = "#3e1557";lootbeamColor = "#ffa350db";menuTextColor = "#ffa350db";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Ancient shard") {
     VAR_UNIQUE_ANCIENT_SHARD_CUSTOMSTYLE 
@@ -6188,7 +6179,7 @@ type: style
 label: Chromium ingot
 exampleItem: Chromium ingot
 */
-#define VAR_UNIQUE_CHROMIUM_INGOT_CUSTOMSTYLE 
+#define VAR_UNIQUE_CHROMIUM_INGOT_CUSTOMSTYLE textColor = "#817b85";backgroundColor = "#343035";borderColor = "#201d20";lootbeamColor = "#817b85";menuTextColor = "#817b85";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Chromium ingot") {
     VAR_UNIQUE_CHROMIUM_INGOT_CUSTOMSTYLE 
@@ -6199,10 +6190,21 @@ type: style
 label: Awakener's orb
 exampleItem: Awakener's orb
 */
-#define VAR_UNIQUE_AWAKENERS_ORB_CUSTOMSTYLE
+#define VAR_UNIQUE_AWAKENERS_ORB_CUSTOMSTYLE textColor = "#ffd16be3";backgroundColor = "#6ba184ad";borderColor = "#ffcb8ee5";lootbeamColor = "#ffd16be3";menuTextColor = "#ffd16be3";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
 apply (name:"Awakener's orb") {
     VAR_UNIQUE_AWAKENERS_ORB_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+label: Vorkath's head
+exampleItem: Vorkath's head
+*/
+#define VAR_UNIQUE_VORKATHS_HEAD_CUSTOMSTYLE textColor = "#cbcfc8";backgroundColor = "#8f67a5b5";borderColor = "#544d54";lootbeamColor = "#ff67a5b5";menuTextColor = "#ff67a5b5";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
+
+apply (name:"Vorkath's head") {
+    VAR_UNIQUE_VORKATHS_HEAD_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_unique_styles
@@ -6212,7 +6214,8 @@ group: Power User
 */
 #define VAR_INDIVIDUAL_UNIQUE true
 
-rule (VAR_INDIVIDUAL_UNIQUE && name:["Chromium ingot","Awakener's orb","Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Unsired","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon pickaxe","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Deadeye prayer scroll","Mystic vigour prayer scroll","Giantsoul amulet","Soiled page","Desiccated Page","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Dark totem base","Dark totem middle","Dark totem top","Ancient shard","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+rule (VAR_INDIVIDUAL_UNIQUE && name:["Vorkath's head","Chromium ingot","Awakener's orb","Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Unsired","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon pickaxe","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Deadeye prayer scroll","Mystic vigour prayer scroll","Giantsoul amulet","Soiled page","Desiccated Page","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Dark totem base","Dark totem middle","Dark totem top","Ancient shard","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+
 
 
 
@@ -6350,6 +6353,7 @@ apply (name:"Brimstone key") {
 
 
 
+
 /*@ define:module:highlighted
 ---
 name: Highlighted Items
@@ -6387,6 +6391,7 @@ group: Power User
 #define VAR_HIGHLIGHTED_TERMINATE false
 
 rule (VAR_HIGHLIGHTED_TERMINATE && name:VAR_HIGHLIGHTED_LIST) {}
+
 
 
 
@@ -6582,6 +6587,7 @@ rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE && value:<VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
 rule (VAR_VALUES_TIER_5_TERMINATE && ((value:>=VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_5_SHOW)) {}
+
 
 
 
@@ -7389,6 +7395,7 @@ apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
 
 
 
+
 /*@ define:module:constants
 hidden: true
 name: Constants
@@ -7507,7 +7514,7 @@ name: Constants
 
 #define CONST_FARMING_SEEDS_TREE_LIST [   "Acorn",   "Willow seed",   "Maple seed",   "Yew seed",   "Magic seed", ]
 
-#define CONST_FARMING_SEEDS_FRUIT_TREE_LIST [   "Apple seed",   "Banana seed",   "Orange seed",   "Curry seed",   "Pineapple seed",   "Papaya seed",   "Palm tree seed",   "Dragonfruit seed", ]
+#define CONST_FARMING_SEEDS_FRUIT_TREE_LIST [   "Apple tree seed",   "Banana tree seed",   "Orange tree seed",   "Curry tree seed",   "Pineapple seed",   "Papaya tree seed",   "Palm tree seed",   "Dragonfruit tree seed", ]
 
 #define CONST_FARMING_SEEDS_SPECIAL_TREE_LIST [   "Teak seed",   "Mahogany seed",   "Calquat tree seed",   "Crystal acorn",   "Spirit seed",   "Celastrus seed",   "Redwood tree seed", ]
 
