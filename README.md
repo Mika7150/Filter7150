@@ -20,4 +20,5 @@ Based loosely on [Joe's filter](https://github.com/typical-whack/loot-filters-mo
 # Credits
 
 Credit to Joe for [Joe's filter](https://github.com/typical-whack/loot-filters-modules) for the base and sorting/filtering modules, aswell as being the filter which helped me figure out what I was even doing at all
+
 Credit to Sweater Paws for helping with some of the item styles
