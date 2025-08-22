@@ -3,9 +3,10 @@ Mika7150's osrs loot filter for the "loot filters" plugin on runelite.
 
 Based loosely on Joe's filter, from the homepage of https://filterscape.xyz
 
-## Showcase Images
+## Showcase Image
 
-WIP
+<img width="588" height="474" alt="image" src="https://github.com/user-attachments/assets/4ed70102-49ec-41f9-97f8-c283651fe56b" />
+
 
 # Installation
 
