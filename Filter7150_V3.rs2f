@@ -7,6 +7,7 @@ meta { name = "Filter7150_V3"; description = "Mika7150's V3 filter, with every b
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -129,6 +130,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -162,6 +164,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3956,6 +3959,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:individual_unique_styles
 name: Individual Unique Item Styles
 subtitle: Individual unique items
@@ -6224,6 +6228,7 @@ rule (VAR_INDIVIDUAL_UNIQUE && name:["Vorkath's head","Chromium ingot","Awakener
 
 
 
+
 /*@ define:module:item_category_styles
 name: Item Styles
 subtitle: Individual items and categories
@@ -6348,6 +6353,15 @@ apply (name:"Brimstone key") {
     VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE 
 }
 
+/*@ define:input:item_category_styles
+type: boolean
+label: Dont let Individual items get filtered out or restyled in future modules
+group: Power User
+*/
+#define VAR_INDIVIDUAL_ITEMS true
+
+rule (VAR_INDIVIDUAL_ITEMS && name:["Brimstone key","Larran's key"]) {}
+
 
 
 
@@ -6391,6 +6405,7 @@ group: Power User
 #define VAR_HIGHLIGHTED_TERMINATE false
 
 rule (VAR_HIGHLIGHTED_TERMINATE && name:VAR_HIGHLIGHTED_LIST) {}
+
 
 
 
@@ -6587,6 +6602,7 @@ rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE && value:<VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
 rule (VAR_VALUES_TIER_5_TERMINATE && ((value:>=VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_5_SHOW)) {}
+
 
 
 
@@ -7383,6 +7399,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
