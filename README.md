@@ -13,7 +13,7 @@ Based on [Joe's filter](https://github.com/typical-whack/loot-filters-modules)
 # Installation
 
 ## Filterscape.xyz method (Recommended) 
-  1. go to https://filterscape.xyz/import?filterId=scfzw6
+  1. go to https://filterscape.xyz/import?filterId=g1k61w
   2. Press the small import button top right
   3. Here you can edit the filter to your liking, change the colours, enable or disable modules and change which items belong to each categories and their associated values!
   4. When done editing, press export to runelite which will copy it to your clipboard
