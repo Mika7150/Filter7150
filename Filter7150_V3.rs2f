@@ -8,6 +8,7 @@ meta { name = "Filter7150_V3"; description = "Mika7150's V3 filter, with every b
 
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -131,6 +132,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
 
 
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -164,6 +166,7 @@ type: stringlist
 label: Items to always show first
 */
 #define VAR_MENU_SORT_ITEMS_FIRST []
+
 
 
 
@@ -3960,15 +3963,18 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
 
 
 
+
 /*@ define:module:individual_unique_styles
 name: Individual Unique Item Styles
 subtitle: Individual unique items
 description: |
-  Add custom styling to specific unique items.
+  Add custom styling to specific unique items by boss/area.
 */
+
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kraken
 label: Jar of dirt
 exampleItem: Jar of dirt
 */
@@ -3980,6 +3986,7 @@ apply (name:"Jar of dirt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Jar of swamp
 exampleItem: Jar of swamp
 */
@@ -3991,6 +3998,7 @@ apply (name:"Jar of swamp") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kalphite Queen
 label: Jar of sand
 exampleItem: Jar of sand
 */
@@ -4002,6 +4010,7 @@ apply (name:"Jar of sand") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Cerberus
 label: Jar of souls
 exampleItem: Jar of souls
 */
@@ -4013,6 +4022,7 @@ apply (name:"Jar of souls") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Abyssal Sire
 label: Jar of miasma
 exampleItem: Jar of miasma
 */
@@ -4024,6 +4034,7 @@ apply (name:"Jar of miasma") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Catacombs of Kourend
 label: Jar of darkness
 exampleItem: Jar of darkness
 */
@@ -4035,6 +4046,7 @@ apply (name:"Jar of darkness") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Grotesque Guardians
 label: Jar of stone
 exampleItem: Jar of stone
 */
@@ -4046,6 +4058,7 @@ apply (name:"Jar of stone") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Vorkath
 label: Jar of decay
 exampleItem: Jar of decay
 */
@@ -4057,6 +4070,7 @@ apply (name:"Jar of decay") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Jar of chemicals
 exampleItem: Jar of chemicals
 */
@@ -4068,6 +4082,7 @@ apply (name:"Jar of chemicals") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Sarachnis
 label: Jar of eyes
 exampleItem: Jar of eyes
 */
@@ -4079,6 +4094,7 @@ apply (name:"Jar of eyes") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Jar of dreams
 exampleItem: Jar of dreams
 */
@@ -4090,6 +4106,7 @@ apply (name:"Jar of dreams") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Jar of spirits
 exampleItem: Jar of spirits
 */
@@ -4101,6 +4118,7 @@ apply (name:"Jar of spirits") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Thermonuclear smoke devil
 label: Jar of smoke
 exampleItem: Jar of smoke
 */
@@ -4112,6 +4130,7 @@ apply (name:"Jar of smoke") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Araxxor
 label: Jar of venom
 exampleItem: Jar of venom
 */
@@ -4123,6 +4142,7 @@ apply (name:"Jar of venom") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Grotesque Guardians
 label: Black tourmaline core
 exampleItem: Black tourmaline core
 */
@@ -4134,6 +4154,7 @@ apply (name:"Black tourmaline core") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Grotesque Guardians
 label: Granite gloves
 exampleItem: Granite gloves
 */
@@ -4145,6 +4166,7 @@ apply (name:"Granite gloves") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Grotesque Guardians
 label: Granite ring
 exampleItem: Granite ring
 */
@@ -4156,6 +4178,7 @@ apply (name:"Granite ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Grotesque Guardians
 label: Granite hammer
 exampleItem: Granite hammer
 */
@@ -4167,6 +4190,7 @@ apply (name:"Granite hammer") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Abyssal Sire
 label: Abyssal head
 exampleItem: Abyssal head
 */
@@ -4178,6 +4202,7 @@ apply (name:"Abyssal head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Abyssal Sire
 label: Unsired
 exampleItem: Unsired
 */
@@ -4189,6 +4214,7 @@ apply (name:"Unsired") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Abyssal Sire
 label: Abyssal dagger
 exampleItem: Abyssal dagger
 */
@@ -4200,6 +4226,7 @@ apply (name:"Abyssal dagger") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Abyssal Sire
 label: Abyssal whip
 exampleItem: Abyssal whip
 */
@@ -4211,6 +4238,7 @@ apply (name:"Abyssal whip") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kraken
 label: Kraken tentacle
 exampleItem: Kraken tentacle
 */
@@ -4222,6 +4250,7 @@ apply (name:"Kraken tentacle") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kraken
 label: Trident of the seas
 exampleItem: Trident of the seas
 */
@@ -4233,6 +4262,7 @@ apply (name:"Trident of the seas" || name:"Uncharged trident") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Cerberus
 label: Eternal crystal
 exampleItem: Eternal crystal
 */
@@ -4244,6 +4274,7 @@ apply (name:"Eternal crystal") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Cerberus
 label: Pegasian crystal
 exampleItem: Pegasian crystal
 */
@@ -4255,6 +4286,7 @@ apply (name:"Pegasian crystal") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Cerberus
 label: Primordial crystal
 exampleItem: Primordial crystal
 */
@@ -4266,6 +4298,7 @@ apply (name:"Primordial crystal") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Cerberus
 label: Smouldering stone
 exampleItem: Smouldering stone
 */
@@ -4277,6 +4310,7 @@ apply (name:"Smouldering stone") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Araxxor
 label: Araxyte head
 exampleItem: Araxyte head
 */
@@ -4288,6 +4322,43 @@ apply (name:"Araxyte head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Araxxor
+label: Noxious Halberd Pieces
+exampleItem: Noxious blade
+*/
+#define VAR_UNIQUE_NOXIOUS_HALBERD_CUSTOMSTYLE textColor = "#18bf7e";backgroundColor = "#302630";borderColor = "#5a5045";lootbeamColor = "#18bf7e";menuTextColor = "#18bf7e";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+
+apply (name:"Noxious pommel" || name:"Noxious point" || name:"Noxious blade" || name:"Noxious halberd") {
+    VAR_UNIQUE_NOXIOUS_HALBERD_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Araxxor
+label: Araxyte fang
+exampleItem: Araxyte fang
+*/
+#define VAR_UNIQUE_ARAXYTE_FANG_CUSTOMSTYLE textColor = "#af8f76";backgroundColor = "#302630";borderColor = "#15a560";lootbeamColor = "#18bf7e";menuTextColor = "#18bf7e";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+
+apply (name:"Araxyte fang") {
+    VAR_UNIQUE_ARAXYTE_FANG_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Araxxor
+label: Coagulated venom
+exampleItem: Coagulated venom
+*/
+#define VAR_UNIQUE_COAGULATED_VENOM_CUSTOMSTYLE textColor = "#fff66b00";backgroundColor = "#118b51";borderColor = "#2f2525";lootbeamColor = "#118b51";menuTextColor = "#118b51";showLootbeam = true;
+
+apply (name:"Coagulated venom") {
+    VAR_UNIQUE_COAGULATED_VENOM_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Thermonuclear smoke devil
 label: Occult necklace
 exampleItem: Occult necklace
 */
@@ -4299,6 +4370,7 @@ apply (name:"Occult necklace") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Thermonuclear smoke devil
 label: Smoke battlestaff
 exampleItem: Smoke battlestaff
 */
@@ -4310,6 +4382,7 @@ apply (name:"Smoke battlestaff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra's claw
 exampleItem: Hydra's claw
 */
@@ -4321,6 +4394,7 @@ apply (name:"Hydra's claw") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra tail
 exampleItem: Hydra tail
 */
@@ -4332,6 +4406,7 @@ apply (name:"Hydra tail") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra leather
 exampleItem: Hydra leather
 */
@@ -4343,6 +4418,7 @@ apply (name:"Hydra leather") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra's fang
 exampleItem: Hydra's fang
 */
@@ -4354,6 +4430,7 @@ apply (name:"Hydra's fang") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra's eye
 exampleItem: Hydra's eye
 */
@@ -4365,6 +4442,7 @@ apply (name:"Hydra's eye") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Hydra's heart
 exampleItem: Hydra's heart
 */
@@ -4376,6 +4454,7 @@ apply (name:"Hydra's heart") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Alchemical Hydra
 label: Alchemical hydra heads
 exampleItem: Alchemical hydra heads
 */
@@ -4387,6 +4466,7 @@ apply (name:"Alchemical hydra heads") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Archers ring
 exampleItem: Archers ring
 */
@@ -4398,6 +4478,7 @@ apply (name:"Archers ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Berserker ring
 exampleItem: Berserker ring
 */
@@ -4409,6 +4490,7 @@ apply (name:"Berserker ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Warrior ring
 exampleItem: Warrior ring
 */
@@ -4420,6 +4502,7 @@ apply (name:"Warrior ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Seers ring
 exampleItem: Seers ring
 */
@@ -4431,17 +4514,31 @@ apply (name:"Seers ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Dragon axe
 exampleItem: Dragon axe
 */
 #define VAR_UNIQUE_DRAGON_AXE_CUSTOMSTYLE textColor = "#ff942114";backgroundColor = "#d9544d4d";borderColor = "#a76b5e";lootbeamColor = "#ff942114";menuTextColor = "#ff942114";textAccent = 1;fontType = 2;showLootbeam = true;sound = 10241;icon = CurrentItem();
 
-apply (name:"Dragon axe" || name:"Dragon pickaxe") {
+apply (name:"Dragon axe") {
     VAR_UNIQUE_DRAGON_AXE_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kalphite Queen
+label: Dragon pickaxe
+exampleItem: Dragon pickaxe
+*/
+#define VAR_UNIQUE_DRAGON_PICKAXE_CUSTOMSTYLE textColor = "#ff942114";backgroundColor = "#d9544d4d";borderColor = "#a76b5e";lootbeamColor = "#ff942114";menuTextColor = "#ff942114";textAccent = 1;fontType = 2;showLootbeam = true;sound = 10241;icon = CurrentItem();
+
+apply (name:"Dragon pickaxe") {
+    VAR_UNIQUE_DRAGON_PICKAXE_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Dagannoth Kings
 label: Seercull
 exampleItem: Seercull
 */
@@ -4453,6 +4550,7 @@ apply (name:"Seercull") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Dagannoth Kings
 label: Mud battlestaff
 exampleItem: Mud battlestaff
 */
@@ -4464,6 +4562,7 @@ apply (name:"Mud battlestaff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Sarachnis
 label: Sarachnis cudgel
 exampleItem: Sarachnis cudgel
 */
@@ -4475,6 +4574,7 @@ apply (name:"Sarachnis cudgel") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Godsword shards
 exampleItem: Godsword shard 1
 */
@@ -4486,10 +4586,11 @@ apply (name:"Godsword shard 1" || name:"Godsword shard 2" || name:"Godsword shar
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Armadyl helmet
 exampleItem: Armadyl helmet
 */
-#define VAR_UNIQUE_ARMADYL_HELMET_CUSTOMSTYLE textColor = "#a4975c";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_UNIQUE_ARMADYL_HELMET_CUSTOMSTYLE textColor = "#ffe7d379";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Armadyl helmet") {
     VAR_UNIQUE_ARMADYL_HELMET_CUSTOMSTYLE 
@@ -4497,10 +4598,11 @@ apply (name:"Armadyl helmet") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Armadyl chestplate
 exampleItem: Armadyl chestplate
 */
-#define VAR_UNIQUE_ARMADYL_CHESTPLATE_CUSTOMSTYLE textColor = "#a4975c";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_UNIQUE_ARMADYL_CHESTPLATE_CUSTOMSTYLE textColor = "#ffe7d379";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Armadyl chestplate") {
     VAR_UNIQUE_ARMADYL_CHESTPLATE_CUSTOMSTYLE 
@@ -4508,10 +4610,11 @@ apply (name:"Armadyl chestplate") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Armadyl chainskirt
 exampleItem: Armadyl chainskirt
 */
-#define VAR_UNIQUE_ARMADYL_CHAINSKIRT_CUSTOMSTYLE textColor = "#a4975c";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_UNIQUE_ARMADYL_CHAINSKIRT_CUSTOMSTYLE textColor = "#ffe7d379";backgroundColor = "#bd5e5e69";borderColor = "#535359";lootbeamColor = "#a4975c";menuTextColor = "#a4975c";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Armadyl chainskirt") {
     VAR_UNIQUE_ARMADYL_CHAINSKIRT_CUSTOMSTYLE 
@@ -4519,6 +4622,7 @@ apply (name:"Armadyl chainskirt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Armadyl hilt
 exampleItem: Armadyl hilt
 */
@@ -4530,6 +4634,7 @@ apply (name:"Armadyl hilt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Armadyl crossbow
 exampleItem: Armadyl crossbow
 */
@@ -4541,6 +4646,7 @@ apply (name:"Armadyl crossbow") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Saradomin hilt
 exampleItem: Saradomin hilt
 */
@@ -4552,6 +4658,7 @@ apply (name:"Saradomin hilt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Saradomin sword
 exampleItem: Saradomin sword
 */
@@ -4563,6 +4670,7 @@ apply (name:"Saradomin sword") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Saradomin's light
 exampleItem: Saradomin's light
 */
@@ -4574,6 +4682,7 @@ apply (name:"Saradomin's light") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Bandos chestplate
 exampleItem: Bandos chestplate
 */
@@ -4585,6 +4694,7 @@ apply (name:"Bandos chestplate") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Bandos tassets
 exampleItem: Bandos tassets
 */
@@ -4596,6 +4706,7 @@ apply (name:"Bandos tassets") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Bandos boots
 exampleItem: Bandos boots
 */
@@ -4607,6 +4718,7 @@ apply (name:"Bandos boots") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Bandos hilt
 exampleItem: Bandos hilt
 */
@@ -4618,6 +4730,7 @@ apply (name:"Bandos hilt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Staff of the dead
 exampleItem: Staff of the dead
 */
@@ -4629,6 +4742,7 @@ apply (name:"Staff of the dead") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Zamorakian spear
 exampleItem: Zamorakian spear
 */
@@ -4640,6 +4754,7 @@ apply (name:"Zamorakian spear") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Steam battlestaff
 exampleItem: Steam battlestaff
 */
@@ -4651,6 +4766,7 @@ apply (name:"Steam battlestaff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Zamorak hilt
 exampleItem: Zamorak hilt
 */
@@ -4662,6 +4778,7 @@ apply (name:"Zamorak hilt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Ancient hilt
 exampleItem: Ancient hilt
 */
@@ -4673,6 +4790,7 @@ apply (name:"Ancient hilt") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Nihil horn
 exampleItem: Nihil horn
 */
@@ -4684,10 +4802,11 @@ apply (name:"Nihil horn") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Zaryte vambraces
 exampleItem: Zaryte vambraces
 */
-#define VAR_UNIQUE_ZARYTE_VAMBRACES_CUSTOMSTYLE textColor = "#a33caa";backgroundColor = "#ab5a5761";borderColor = "#a33caa";lootbeamColor = "#a33caa";menuTextColor = "#a33caa";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+#define VAR_UNIQUE_ZARYTE_VAMBRACES_CUSTOMSTYLE textColor = "#ffd220de";backgroundColor = "#ab5a5761";borderColor = "#ffd662de";lootbeamColor = "#a33caa";menuTextColor = "#a33caa";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 apply (name:"Zaryte vambraces") {
     VAR_UNIQUE_ZARYTE_VAMBRACES_CUSTOMSTYLE 
@@ -4695,6 +4814,7 @@ apply (name:"Zaryte vambraces") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Torva full helm (damaged)
 exampleItem: Torva full helm (damaged)
 */
@@ -4706,6 +4826,7 @@ apply (name:"Torva full helm (damaged)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Torva platebody (damaged)
 exampleItem: Torva platebody (damaged)
 */
@@ -4717,6 +4838,7 @@ apply (name:"Torva platebody (damaged)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: God Wars Dungeon
 label: Torva platelegs (damaged)
 exampleItem: Torva platelegs (damaged)
 */
@@ -4728,6 +4850,7 @@ apply (name:"Torva platelegs (damaged)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Elder chaos top
 exampleItem: Elder chaos top
 */
@@ -4739,6 +4862,7 @@ apply (name:"Elder chaos top") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Elder chaos robe
 exampleItem: Elder chaos robe
 */
@@ -4750,6 +4874,7 @@ apply (name:"Elder chaos robe") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Elder chaos hood
 exampleItem: Elder chaos hood
 */
@@ -4761,6 +4886,7 @@ apply (name:"Elder chaos hood") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Odium shards
 exampleItem: Odium shard 1
 */
@@ -4772,6 +4898,7 @@ apply (name:"Odium shard 1" || name:"Odium shard 2" || name:"Odium shard 3") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Malediction shards
 exampleItem: Malediction shard 1
 */
@@ -4783,6 +4910,7 @@ apply (name:"Malediction shard 1" || name:"Malediction shard 2" || name:"Maledic
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Fedora
 exampleItem: Fedora
 */
@@ -4794,6 +4922,7 @@ apply (name:"Fedora") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: King Black Dragon
 label: Kbd heads
 exampleItem: Kbd heads
 */
@@ -4805,6 +4934,7 @@ apply (name:"Kbd heads") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: King Black Dragon
 label: Draconic visage
 exampleItem: Draconic visage
 */
@@ -4816,6 +4946,7 @@ apply (name:"Draconic visage") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Amulet of avarice
 exampleItem: Amulet of avarice
 */
@@ -4827,6 +4958,7 @@ apply (name:"Amulet of avarice") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Craw's bow (u)
 exampleItem: Craw's bow (u)
 */
@@ -4838,6 +4970,7 @@ apply (name:"Craw's bow (u)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Thammaron's sceptre (u)
 exampleItem: Thammaron's sceptre (u)
 */
@@ -4849,6 +4982,7 @@ apply (name:"Thammaron's sceptre (u)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Viggora's chainmace (u)
 exampleItem: Viggora's chainmace (u)
 */
@@ -4860,6 +4994,7 @@ apply (name:"Viggora's chainmace (u)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Ancient crystal
 exampleItem: Ancient crystal
 */
@@ -4871,6 +5006,7 @@ apply (name:"Ancient crystal") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Ring of the gods
 exampleItem: Ring of the gods
 */
@@ -4882,6 +5018,7 @@ apply (name:"Ring of the gods") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Skull of vet'ion
 exampleItem: Skull of vet'ion
 */
@@ -4893,6 +5030,7 @@ apply (name:"Skull of vet'ion") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Voidwaker Pieces
 exampleItem: Voidwaker blade
 */
@@ -4904,6 +5042,7 @@ apply (name:"Voidwaker blade" || name:"Voidwaker gem" || name:"Voidwaker hilt") 
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Treasonous ring
 exampleItem: Treasonous ring
 */
@@ -4915,6 +5054,7 @@ apply (name:"Treasonous ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Fangs of venenatis
 exampleItem: Fangs of venenatis
 */
@@ -4926,6 +5066,7 @@ apply (name:"Fangs of venenatis") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Tyrannical ring
 exampleItem: Tyrannical ring
 */
@@ -4937,6 +5078,7 @@ apply (name:"Tyrannical ring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Wilderness
 label: Claws of callisto
 exampleItem: Claws of callisto
 */
@@ -4948,6 +5090,7 @@ apply (name:"Claws of callisto") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Elysian sigil
 exampleItem: Elysian sigil
 */
@@ -4959,6 +5102,7 @@ apply (name:"Elysian sigil") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Spectral sigil
 exampleItem: Spectral sigil
 */
@@ -4970,6 +5114,7 @@ apply (name:"Spectral sigil") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Arcane sigil
 exampleItem: Arcane sigil
 */
@@ -4981,6 +5126,7 @@ apply (name:"Arcane sigil") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Holy elixir
 exampleItem: Holy elixir
 */
@@ -4992,6 +5138,7 @@ apply (name:"Holy elixir") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Corporeal Beast
 label: Spirit shield
 exampleItem: Spirit shield
 */
@@ -5003,6 +5150,7 @@ apply (name:"Spirit shield") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kalphite Queen
 label: Kq head
 exampleItem: Kq head
 */
@@ -5014,6 +5162,7 @@ apply (name:"Kq head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kalphite Queen
 label: Dragon chainbody
 exampleItem: Dragon chainbody
 */
@@ -5025,6 +5174,19 @@ apply (name:"Dragon chainbody") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Kalphite Queen
+label: Dragon 2h sword
+exampleItem: Dragon 2h sword
+*/
+#define VAR_UNIQUE_DRAGON_2H_SWORD_CUSTOMSTYLE textColor = "#ffc01f0d";backgroundColor = "#5c5656";borderColor = "#641509";lootbeamColor = "#ffc01f0d";menuTextColor = "#ffc01f0d";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
+
+apply (name:"Dragon 2h sword") {
+    VAR_UNIQUE_DRAGON_2H_SWORD_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Hueycoatl
 label: Dragon hunter wand
 exampleItem: Dragon hunter wand
 */
@@ -5036,6 +5198,7 @@ apply (name:"Dragon hunter wand") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Hueycoatl
 label: Hueycoatl hide
 exampleItem: Hueycoatl hide
 */
@@ -5047,6 +5210,7 @@ apply (name:"Hueycoatl hide") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Hueycoatl
 label: Tome of earth (empty)
 exampleItem: Tome of earth (empty)
 */
@@ -5058,6 +5222,7 @@ apply (name:"Tome of earth (empty)") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Glacial temotli
 exampleItem: Glacial temotli
 */
@@ -5069,6 +5234,7 @@ apply (name:"Glacial temotli") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Fire element staff crown
 exampleItem: Fire element staff crown
 */
@@ -5080,6 +5246,7 @@ apply (name:"Fire element staff crown") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Ice element staff crown
 exampleItem: Ice element staff crown
 */
@@ -5091,6 +5258,7 @@ apply (name:"Ice element staff crown") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Deadeye prayer scroll
 exampleItem: Deadeye prayer scroll
 */
@@ -5102,6 +5270,7 @@ apply (name:"Mystic vigour prayer scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Mystic vigour prayer scroll
 exampleItem: Mystic vigour prayer scroll
 */
@@ -5113,6 +5282,7 @@ apply (name:"Mystic vigour prayer scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Giantsoul amulet
 exampleItem: Giantsoul amulet
 */
@@ -5124,6 +5294,7 @@ apply (name:"Giantsoul amulet") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Desiccated page
 exampleItem: Dessicated page
 */
@@ -5135,6 +5306,7 @@ apply (name:"Desiccated page") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Hueycoatl
 label: Soiled page
 exampleItem: Soiled page
 */
@@ -5146,6 +5318,7 @@ apply (name:"Soiled page") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Tanzanite mutagen
 exampleItem: Tanzanite mutagen
 */
@@ -5157,6 +5330,7 @@ apply (name:"Tanzanite mutagen") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Magma mutagen
 exampleItem: Magma mutagen
 */
@@ -5168,6 +5342,7 @@ apply (name:"Magma mutagen") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Magic fang
 exampleItem: Magic fang
 */
@@ -5179,6 +5354,7 @@ apply (name:"Magic fang") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Serpentine visage
 exampleItem: Serpentine visage
 */
@@ -5190,6 +5366,7 @@ apply (name:"Serpentine visage") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Tanzanite fang
 exampleItem: Tanzanite fang
 */
@@ -5201,6 +5378,7 @@ apply (name:"Tanzanite fang") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zulrah
 label: Uncut onyx
 exampleItem: Uncut onyx
 */
@@ -5212,6 +5390,7 @@ apply (name:"Uncut onyx") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Vorkath
 label: Skeletal visage
 exampleItem: Skeletal visage
 */
@@ -5223,6 +5402,7 @@ apply (name:"Skeletal visage") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Vorkath
 label: Dragonbone necklace
 exampleItem: Dragonbone necklace
 */
@@ -5234,6 +5414,7 @@ apply (name:"Dragonbone necklace") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phantom Muspah
 label: Venator shard
 exampleItem: Venator shard
 */
@@ -5245,6 +5426,43 @@ apply (name:"Venator shard") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phantom Muspah
+label: Charged ice
+exampleItem: Charged ice
+*/
+#define VAR_UNIQUE_CHARGED_ICE_CUSTOMSTYLE textColor = "#c8d8da";backgroundColor = "#a680e1";borderColor = "#5b2a5b";lootbeamColor = "#c8d8da";menuTextColor = "#c8d8da";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+
+apply (name:"Charged ice") {
+    VAR_UNIQUE_CHARGED_ICE_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Phantom Muspah
+label: Frozen cache
+exampleItem: Frozen cache
+*/
+#define VAR_UNIQUE_FROZEN_CACHE_CUSTOMSTYLE textColor = "#c8d8da";backgroundColor = "#4e5b62";borderColor = "#5b2a5b";lootbeamColor = "#c8d8da";menuTextColor = "#c8d8da";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
+
+apply (name:"Frozen cache") {
+    VAR_UNIQUE_FROZEN_CACHE_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Phantom Muspah
+label: Ancient icon
+exampleItem: Ancient icon
+*/
+#define VAR_UNIQUE_ANCIENT_ICON_CUSTOMSTYLE textColor = "#ff5b0089";backgroundColor = "#5e594c70";borderColor = "#9546c4";lootbeamColor = "#6a1197";menuTextColor = "#6a1197";textAccent = 1;fontType = 2;showLootbeam = true;sound = 6765;icon = CurrentItem();
+
+apply (name:"Ancient icon") {
+    VAR_UNIQUE_ANCIENT_ICON_CUSTOMSTYLE 
+}
+
+/*@ define:input:individual_unique_styles
+type: style
+group: Phosani's Nightmare
 label: Inquisitor's
 exampleItem: Inquisitor's mace
 */
@@ -5256,6 +5474,7 @@ apply (name:"Inquisitor's mace" || name:"Inquisitor's great helm" || name:"Inqui
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Nightmare staff
 exampleItem: Nightmare staff
 */
@@ -5267,6 +5486,7 @@ apply (name:"Nightmare staff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Volatile orb
 exampleItem: Volatile orb
 */
@@ -5278,6 +5498,7 @@ apply (name:"Volatile orb") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Harmonised orb
 exampleItem: Harmonised orb
 */
@@ -5289,6 +5510,7 @@ apply (name:"Harmonised orb") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Eldritch orb
 exampleItem: Eldritch orb
 */
@@ -5300,6 +5522,7 @@ apply (name:"Eldritch orb") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Phosani's Nightmare
 label: Parasitic egg
 exampleItem: Parasitic egg
 */
@@ -5311,6 +5534,7 @@ apply (name:"Parasitic egg") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Virtus robes
 exampleItem: Virtus robe top
 */
@@ -5322,6 +5546,7 @@ apply (name:"Virtus robe top" || name:"Virtus mask" || name:"Virtus robe bottom"
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Magus vestige
 exampleItem: Magus vestige
 */
@@ -5333,6 +5558,7 @@ apply (name:"Magus vestige") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Eye of the duke
 exampleItem: Eye of the duke
 */
@@ -5344,6 +5570,7 @@ apply (name:"Eye of the duke") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Ice quartz
 exampleItem: Ice quartz
 */
@@ -5355,6 +5582,7 @@ apply (name:"Ice quartz") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Venator vestige
 exampleItem: Venator vestige
 */
@@ -5366,6 +5594,7 @@ apply (name:"Venator vestige") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Leviathan's lure
 exampleItem: Leviathan's lure
 */
@@ -5377,6 +5606,7 @@ apply (name:"Leviathan's lure") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Smoke quartz
 exampleItem: Smoke quartz
 */
@@ -5388,6 +5618,7 @@ apply (name:"Smoke quartz") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Bellator vestige
 exampleItem: Bellator vestige
 */
@@ -5399,6 +5630,7 @@ apply (name:"Bellator vestige") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Siren's staff
 exampleItem: Siren's staff
 */
@@ -5410,6 +5642,7 @@ apply (name:"Siren's staff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Shadow quartz
 exampleItem: Shadow quartz
 */
@@ -5421,6 +5654,7 @@ apply (name:"Shadow quartz") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Ultor vestige
 exampleItem: Ultor vestige
 */
@@ -5432,6 +5666,7 @@ apply (name:"Ultor vestige") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Executioner's axe head
 exampleItem: Executioner's axe head
 */
@@ -5443,6 +5678,7 @@ apply (name:"Executioner's axe head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Blood quartz
 exampleItem: Blood quartz
 */
@@ -5454,6 +5690,7 @@ apply (name:"Blood quartz") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Hill giant club
 exampleItem: Hill giant club
 */
@@ -5465,6 +5702,7 @@ apply (name:"Hill giant club") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Giants bosses
 label: Bryophyta's essence
 exampleItem: Bryophyta's essence
 */
@@ -5476,6 +5714,7 @@ apply (name:"Bryophyta's essence") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Catacombs of Kourend
 label: Dark claw
 exampleItem: Dark claw
 */
@@ -5487,6 +5726,7 @@ apply (name:"Dark claw") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Catacombs of Kourend
 label: Dark totem
 exampleItem: Dark totem
 */
@@ -5498,6 +5738,7 @@ apply (name:"Dark totem" || name:"Dark totem base" || name:"Dark totem middle" |
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Catacombs of Kourend
 label: Ancient shard
 exampleItem: Ancient shard
 */
@@ -5509,6 +5750,7 @@ apply (name:"Ancient shard") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zalcano
 label: Crystal tool seed
 exampleItem: Crystal tool seed
 */
@@ -5520,6 +5762,7 @@ apply (name:"Crystal tool seed") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Zalcano
 label: Zalcano shard
 exampleItem: Zalcano shard
 */
@@ -5531,6 +5774,7 @@ apply (name:"Zalcano shard") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Zenyte shard
 exampleItem: Zenyte shard
 */
@@ -5542,6 +5786,7 @@ apply (name:"Zenyte shard") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Light frame
 exampleItem: Light frame
 */
@@ -5553,6 +5798,7 @@ apply (name:"Light frame") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Heavy frame
 exampleItem: Heavy frame
 */
@@ -5564,6 +5810,7 @@ apply (name:"Heavy frame") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Ballista limbs
 exampleItem: Ballista limbs
 */
@@ -5575,6 +5822,7 @@ apply (name:"Ballista limbs") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Monkey tail
 exampleItem: Monkey tail
 */
@@ -5586,6 +5834,7 @@ apply (name:"Monkey tail") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Demonic Gorillas
 label: Ballista spring
 exampleItem: Ballista spring
 */
@@ -5597,6 +5846,7 @@ apply (name:"Ballista spring") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Tormented Demons
 label: Tormented synapse
 exampleItem: Tormented synapse
 */
@@ -5608,6 +5858,7 @@ apply (name:"Tormented synapse") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Tormented Demons
 label: Burning claw
 exampleItem: Burning claw
 */
@@ -5619,6 +5870,7 @@ apply (name:"Burning claw") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dragon warhammer
 exampleItem: Dragon warhammer
 */
@@ -5630,6 +5882,7 @@ apply (name:"Dragon warhammer") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dragon metal slice
 exampleItem: Dragon metal slice
 */
@@ -5641,6 +5894,7 @@ apply (name:"Dragon metal slice") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dragon metal lump
 exampleItem: Dragon metal lump
 */
@@ -5652,6 +5906,7 @@ apply (name:"Dragon metal lump") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Tzhaar
 label: Obsidian cape
 exampleItem: Obsidian cape
 */
@@ -5663,105 +5918,31 @@ apply (name:"Obsidian cape") {
 
 /*@ define:input:individual_unique_styles
 type: style
-label: Toktz-ket-xil
-exampleItem: Toktz-ket-xil
-*/
-#define VAR_UNIQUE_TOKTZ_KET_XIL_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Toktz-ket-xil") {
-    VAR_UNIQUE_TOKTZ_KET_XIL_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Tzhaar-ket-om
+group: Tzhaar
+label: Obsidian Weapons
 exampleItem: Tzhaar-ket-om
-*/
-#define VAR_UNIQUE_TZHAAR_KET_OM_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Tzhaar-ket-om") {
-    VAR_UNIQUE_TZHAAR_KET_OM_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Toktz-xil-ak
-exampleItem: Toktz-xil-ak
-*/
-#define VAR_UNIQUE_TOKTZ_XIL_AK_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Toktz-xil-ak") {
-    VAR_UNIQUE_TOKTZ_XIL_AK_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Toktz-xil-ek
-exampleItem: Toktz-xil-ek
-*/
-#define VAR_UNIQUE_TOKTZ_XIL_EK_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Toktz-xil-ek") {
-    VAR_UNIQUE_TOKTZ_XIL_EK_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Toktz-mej-tal
-exampleItem: Toktz-mej-tal
 */
 #define VAR_UNIQUE_TOKTZ_MEJ_TAL_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
-apply (name:"Toktz-mej-tal") {
+apply (name:"Toktz-mej-tal" || name:"Toktz-xil-ek" || name:"Toktz-xil-ak" || name:"Tzhaar-ket-om"|| name:"Toktz-ket-xil" || name:"Toktz-xil-ul") {
     VAR_UNIQUE_TOKTZ_MEJ_TAL_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_unique_styles
 type: style
-label: Toktz-xil-ul
-exampleItem: Toktz-xil-ul
-*/
-#define VAR_UNIQUE_TOKTZ_XIL_UL_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Toktz-xil-ul") {
-    VAR_UNIQUE_TOKTZ_XIL_UL_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Obsidian helmet
-exampleItem: Obsidian helmet
-*/
-#define VAR_UNIQUE_OBSIDIAN_HELMET_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Obsidian helmet") {
-    VAR_UNIQUE_OBSIDIAN_HELMET_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Obsidian platebody
+group: Tzhaar
+label: Obsidian Armour
 exampleItem: Obsidian platebody
-*/
-#define VAR_UNIQUE_OBSIDIAN_PLATEBODY_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
-
-apply (name:"Obsidian platebody") {
-    VAR_UNIQUE_OBSIDIAN_PLATEBODY_CUSTOMSTYLE 
-}
-
-/*@ define:input:individual_unique_styles
-type: style
-label: Obsidian platelegs
-exampleItem: Obsidian platelegs
 */
 #define VAR_UNIQUE_OBSIDIAN_PLATELEGS_CUSTOMSTYLE textColor = "#ffb92a1a";backgroundColor = "#585252";borderColor = "#982011";lootbeamColor = "#982011";menuTextColor = "#982011";textAccent = 1;fontType = 2;showLootbeam = true;icon = CurrentItem();
 
-apply (name:"Obsidian platelegs") {
+apply (name:"Obsidian platelegs" || name:"Obsidian helmet" || name:"Obsidian platebody") {
     VAR_UNIQUE_OBSIDIAN_PLATELEGS_CUSTOMSTYLE 
 }
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Imbued heart
 exampleItem: Imbued heart
 */
@@ -5773,6 +5954,7 @@ apply (name:"Imbued heart") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Eternal gem
 exampleItem: Eternal gem
 */
@@ -5784,6 +5966,7 @@ apply (name:"Eternal gem") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dust battlestaff
 exampleItem: Dust battlestaff
 */
@@ -5795,6 +5978,7 @@ apply (name:"Dust battlestaff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Mist battlestaff
 exampleItem: Mist battlestaff
 */
@@ -5806,6 +5990,7 @@ apply (name:"Mist battlestaff") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Basilisk jaw
 exampleItem: Basilisk jaw
 */
@@ -5817,6 +6002,7 @@ apply (name:"Basilisk jaw") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dark bow
 exampleItem: Dark bow
 */
@@ -5828,6 +6014,7 @@ apply (name:"Dark bow") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Dragon sword
 exampleItem: Dragon sword
 */
@@ -5839,6 +6026,7 @@ apply (name:"Dragon sword") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Drake's tooth
 exampleItem: Drake's tooth
 */
@@ -5850,6 +6038,7 @@ apply (name:"Drake's tooth") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Drake's claw
 exampleItem: Drake's claw
 */
@@ -5861,6 +6050,7 @@ apply (name:"Drake's claw") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Crawling hand
 exampleItem: Crawling hand
 */
@@ -5872,6 +6062,7 @@ apply (name:"Crawling hand") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Cockatrice head
 exampleItem: Cockatrice head
 */
@@ -5883,6 +6074,7 @@ apply (name:"Cockatrice head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Basilisk head
 exampleItem: Basilisk head
 */
@@ -5894,6 +6086,7 @@ apply (name:"Basilisk head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Kurask head
 exampleItem: Kurask head
 */
@@ -5905,6 +6098,7 @@ apply (name:"Kurask head") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Yama
 label: Soulflame horn
 exampleItem: Soulflame horn
 */
@@ -5916,6 +6110,7 @@ apply (name:"Soulflame horn") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Yama
 label: Oathplate helm
 exampleItem: Oathplate helm
 */
@@ -5927,6 +6122,7 @@ apply (name:"Oathplate helm") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Yama
 label: Oathplate chest
 exampleItem: Oathplate chest
 */
@@ -5938,6 +6134,7 @@ apply (name:"Oathplate chest") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Yama
 label: Oathplate legs
 exampleItem: Oathplate legs
 */
@@ -5949,6 +6146,7 @@ apply (name:"Oathplate legs") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Bronze defender
 exampleItem: Bronze defender
 */
@@ -5960,6 +6158,7 @@ apply (name:"Bronze defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Iron defender
 exampleItem: Iron defender
 */
@@ -5971,6 +6170,7 @@ apply (name:"Iron defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Steel defender
 exampleItem: Steel defender
 */
@@ -5982,6 +6182,7 @@ apply (name:"Steel defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Black defender
 exampleItem: Black defender
 */
@@ -5993,6 +6194,7 @@ apply (name:"Black defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Mithril defender
 exampleItem: Mithril defender
 */
@@ -6004,6 +6206,7 @@ apply (name:"Mithril defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Adamant defender
 exampleItem: Adamant defender
 */
@@ -6015,6 +6218,7 @@ apply (name:"Adamant defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Rune defender
 exampleItem: Rune defender
 */
@@ -6026,6 +6230,7 @@ apply (name:"Rune defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Warriors' Guild
 label: Dragon defender
 exampleItem: Dragon defender
 */
@@ -6037,6 +6242,7 @@ apply (name:"Dragon defender") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Earth Warrior champion scroll
 exampleItem: Earth Warrior champion scroll
 */
@@ -6048,6 +6254,7 @@ apply (name:"Earth Warrior champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Ghoul champion scroll
 exampleItem: Ghoul champion scroll
 */
@@ -6059,6 +6266,7 @@ apply (name:"Ghoul champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Giant champion scroll
 exampleItem: Giant champion scroll
 */
@@ -6070,6 +6278,7 @@ apply (name:"Giant champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Goblin champion scroll
 exampleItem: Goblin champion scroll
 */
@@ -6081,6 +6290,7 @@ apply (name:"Goblin champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Hobgoblin champion scroll
 exampleItem: Hobgoblin champion scroll
 */
@@ -6092,6 +6302,7 @@ apply (name:"Hobgoblin champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Imp champion scroll
 exampleItem: Imp champion scroll
 */
@@ -6103,6 +6314,7 @@ apply (name:"Imp champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Jogre champion scroll
 exampleItem: Jogre champion scroll
 */
@@ -6114,6 +6326,7 @@ apply (name:"Jogre champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Lesser Demon champion scroll
 exampleItem: Lesser Demon champion scroll
 */
@@ -6125,6 +6338,7 @@ apply (name:"Lesser Demon champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Skeleton champion scroll
 exampleItem: Skeleton champion scroll
 */
@@ -6136,6 +6350,7 @@ apply (name:"Skeleton champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Champion Scrolls
 label: Zombie champion scroll
 exampleItem: Zombie champion scroll
 */
@@ -6147,6 +6362,7 @@ apply (name:"Zombie champion scroll") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Earthbound tecpatl
 exampleItem: Earthbound tecpatl
 */
@@ -6158,6 +6374,7 @@ apply (name:"Earthbound tecpatl") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Antler guard
 exampleItem: Antler guard
 */
@@ -6169,6 +6386,7 @@ apply (name:"Antler guard") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Slayer
 label: Sulfur blades
 exampleItem: Sulfur blades
 */
@@ -6180,6 +6398,7 @@ apply (name:"Sulfur blades") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Chromium ingot
 exampleItem: Chromium ingot
 */
@@ -6191,6 +6410,7 @@ apply (name:"Chromium ingot") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Desert Treasure II
 label: Awakener's orb
 exampleItem: Awakener's orb
 */
@@ -6202,6 +6422,7 @@ apply (name:"Awakener's orb") {
 
 /*@ define:input:individual_unique_styles
 type: style
+group: Vorkath
 label: Vorkath's head
 exampleItem: Vorkath's head
 */
@@ -6218,7 +6439,8 @@ group: Power User
 */
 #define VAR_INDIVIDUAL_UNIQUE true
 
-rule (VAR_INDIVIDUAL_UNIQUE && name:["Vorkath's head","Chromium ingot","Awakener's orb","Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Unsired","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon pickaxe","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Deadeye prayer scroll","Mystic vigour prayer scroll","Giantsoul amulet","Soiled page","Desiccated Page","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Dark totem base","Dark totem middle","Dark totem top","Ancient shard","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+rule (VAR_INDIVIDUAL_UNIQUE && name:["Vorkath's head","Chromium ingot","Awakener's orb","Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Unsired","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte head","Noxious point","Noxious pommel","Noxious blade","Araxyte fang","Coagulated venom","Occult necklace","Smoke battlestaff","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon pickaxe","Dragon 2h sword","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Deadeye prayer scroll","Mystic vigour prayer scroll","Giantsoul amulet","Soiled page","Desiccated Page","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Skeletal visage","Dragonbone necklace","Venator shard","Charged ice","Frozen cache","Ancient icon","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Dark claw","Dark totem","Dark totem base","Dark totem middle","Dark totem top","Ancient shard","Crystal tool seed","Zalcano shard","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Basilisk jaw","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Earthbound tecpatl","Antler guard","Sulfur blades"]) {}
+
 
 
 
@@ -6244,7 +6466,7 @@ group: Currency
 exampleItem: Coins
 exampleItemId: 1004
 */
-#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffffe500";borderColor = "#ffffe500";menuTextColor = "#ffffe500";
+#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffffe500";borderColor = "#00ffffff";menuTextColor = "#ffffe500";
 
 apply (name:CONST_CURRENCY_LIST) {
     VAR_CURRENCY_CUSTOMSTYLE 
@@ -6368,6 +6590,7 @@ rule (VAR_INDIVIDUAL_ITEMS && name:["Brimstone key","Larran's key"]) {}
 
 
 
+
 /*@ define:module:highlighted
 ---
 name: Highlighted Items
@@ -6405,6 +6628,7 @@ group: Power User
 #define VAR_HIGHLIGHTED_TERMINATE false
 
 rule (VAR_HIGHLIGHTED_TERMINATE && name:VAR_HIGHLIGHTED_LIST) {}
+
 
 
 
@@ -6602,6 +6826,7 @@ rule (VAR_VALUES_TIER_2_TERMINATE && ((value:>=VAR_VALUES_TIER_2_VALUE && value:
 rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW)) {}
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE && value:<VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
 rule (VAR_VALUES_TIER_5_TERMINATE && ((value:>=VAR_VALUES_TIER_5_VALUE) || name:VAR_VALUES_TIER_5_SHOW)) {}
+
 
 
 
@@ -7399,6 +7624,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 
 
